@@ -1,5 +1,5 @@
 # ⚽ Knowball
-Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advanced, implementada para fins acadêmicos na disciplina Devops Tools e Cloud Computing. O objetivo é demonstrar a utilização de máquinas virtuais em nuvem e o deploy de aplicações com Docker, aplicando conceitos de Cloud Computing e DevOps. A aplicação foi empacotada em um container Docker, utilizando imagens leves e executada em background dentro de uma máquina virtual Linux provisionada na nuvem.
+Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advanced, implementada para fins acadêmicos na disciplina Devops Tools e Cloud Computing. O objetivo é demonstrar a utilização de máquinas virtuais em nuvem e o deploy de aplicações com Docker, aplicando conceitos de Devops e Cloud Computing. 
 
 ## ⚙️ Tecnologias Utilizadas
 - **Java 17:** Linguagem principal da aplicação.
