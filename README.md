@@ -9,6 +9,26 @@ Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advance
 - **Linux:** Sistema operacional da máquina virtual.
 - **Azure:** Plataforma em nuvem utilizada para o deploy.
 
+## 🚀 Como Usar
+
+1. **Clone o Repositório:**
+
+   ```bash
+   https://github.com/knowball-oracle/Knowball-Devops.git
+   ```
+
+2. **Acesse o diretório do projeto:**
+
+   ```bash
+   cd Knowball-Devops
+   ```
+
+3. **Construa a imagem Docker:**
+
+   ```bash
+   docker build -t nome-da-imagem .
+   ```
+
 ## 👥 Integrantes
 
 | Dev | Foto | RM |
