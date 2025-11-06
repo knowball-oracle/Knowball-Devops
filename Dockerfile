@@ -27,10 +27,5 @@ USER appuser
 # Exponha porta da aplicação
 EXPOSE 8080
 
-# Variáveis de ambiente (atualizadas para Oracle)
-ENV SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL \
-    SPRING_DATASOURCE_USERNAME=rm560967 \
-    SPRING_DATASOURCE_PASSWORD=240406
-
 # Comando para iniciar a aplicação
 ENTRYPOINT ["java", "-jar", "app.jar"]
