@@ -44,7 +44,70 @@ Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advance
    ```bash
    docker ps
    ```
-   
+
+## ☁️ Deploy na Máquina Virtual (Azure)
+
+1. **Conectar na VM:**
+
+   ```bash
+   ssh azureuser@<ip-publico>
+   ```
+
+2. **Atualizar Pacotes do Sistema:**
+
+   ```bash
+   sudo apt update -y
+   ```
+
+3. **Instalar Docker:**
+
+   ```bash
+   sudo apt install docker.io -y
+   ```
+
+4. **Iniciar o serviço Docker:**
+
+   ```bash
+   sudo systemctl start docker
+   ```
+
+5. **Permitir uso do Docker sem sudo:**
+
+   ```bash
+   sudo usermod -aG docker $USER
+   ```
+
+6. **Encerrar a sessão atual:**
+
+   ```bash
+   exit
+   ```
+
+7. **Reconectar na VM:**
+
+   ```bash
+   ssh azureuser@<ip-publico>
+   ```
+
+8. **Clone o repositório:**
+
+   ```bash
+   https://github.com/knowball-oracle/Knowball-Devops.git
+   cd Knowball-Devops
+   ```
+
+9. **Build da Imagem Docker:**
+
+   ```bash
+   docker build -t java-api .
+   ```
+
+10. **Executar o container em background:**
+
+    ```bash
+    docker run -d --name app-java -p 8080:8080 java-api
+    ```
+
 ---
 
 ## 👥 Integrantes
