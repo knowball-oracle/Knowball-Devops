@@ -16,7 +16,7 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:17-jre-alpine
 
 # Criar usuário não-root antes de copiar arquivos
-RUN addgroup --system appuser && adduser --system --ingroup appuser appuser
+RUN addgroup -S appuser && adduser -S appuser -G appuser
 WORKDIR /app
 
 # Copie só o jar final
