@@ -108,6 +108,12 @@ Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advance
     docker run -d --name app-java -p 8080:8080 java-api
     ```
 
+11. **Acessar o Projeto:**
+
+    ```bash
+    http://<ip-publico>:8080
+    ```
+
 ---
 
 ## 👥 Integrantes
