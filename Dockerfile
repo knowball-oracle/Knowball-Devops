@@ -1,5 +1,5 @@
 # Estágio 1: Build da aplicação com Maven e aproveitamento de cache
-FROM maven:3.9-eclipse-temurin-17 AS builder
+FROM maven:3.9-eclipse-temurin-17-alpine AS builder
 WORKDIR /app
 
 # Copie pom.xml e baixe dependências primeiro (cache eficiente)
@@ -13,7 +13,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Estágio 2: Imagem enxuta para execução
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurin:17-jre-alpine
 
 # Criar usuário não-root antes de copiar arquivos
 RUN addgroup --system appuser && adduser --system --ingroup appuser appuser
