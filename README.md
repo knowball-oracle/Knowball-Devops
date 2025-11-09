@@ -161,14 +161,14 @@ Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advance
     curl -X POST http://localhost:8080/teams
     ```
 
-   ```bash
-   curl -X PUT http://localhost:8080/teams/1
-   ```
+    ```bash
+    curl -X PUT http://localhost:8080/teams/1
+    ```
 
-   ```bash
-   curl -X DELETE http://localhost:8080/teams/1
-   ```
-
+    ```bash
+    curl -X DELETE http://localhost:8080/teams/1
+    ```
+    
 ---
 
 ## 👥 Integrantes
