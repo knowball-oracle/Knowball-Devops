@@ -45,6 +45,31 @@ Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advance
    docker ps
    ```
 
+6. **Acessando documentação da API**
+
+   ```bash
+   http://localhost:8080/swagger-ui/index.html
+   ```
+
+7. **Exemplos de endpoints da API para testes:**
+
+   ```bash
+   curl.exe -X GET http://localhost:8080/championships
+   ```
+
+   ```bash
+   curl.exe -X POST http://localhost:8080/teams
+   ```
+
+   ```bash
+   curl.exe -X PUT http://localhost:8080/teams/1
+   ```
+
+   ```bash
+   curl.exe -X DELETE http://localhost:8080/teams/1
+   ```
+
+
 ## ☁️ Deploy na Máquina Virtual (Azure)
 
 1. **Conectar na VM:**
