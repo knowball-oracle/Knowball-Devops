@@ -136,7 +136,13 @@ Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advance
 10. **Executar o container em background:**
 
     ```bash
-    docker run -d --name app-java -p 8080:8080 java-api
+    docker run -d 
+    -e SPRING_DATASOURCE_URL=jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL 
+    -e SPRING_DATASOURCE_USERNAME={DB_USERNAME}
+    -e SPRING_DATASOURCE_PASSWORD={DB_PASSWORD} 
+    -p 8080:8080 
+    --name app-java 
+    java-api
     ```
 
 11. **Acessar o Projeto:**
