@@ -18,7 +18,7 @@ Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advance
 1. **Clone o Repositório:**
 
    ```bash
-   https://github.com/knowball-oracle/Knowball-Devops.git
+   git clone https://github.com/knowball-oracle/Knowball-Devops.git
    ```
 
 2. **Acesse o diretório do projeto:**
@@ -123,7 +123,7 @@ Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advance
 8. **Clone o repositório:**
 
    ```bash
-   https://github.com/knowball-oracle/Knowball-Devops.git
+   git clone https://github.com/knowball-oracle/Knowball-Devops.git
    cd Knowball-Devops
    ```
 
@@ -145,11 +145,29 @@ Este projeto consiste em uma API REST desenvolvida na disciplina de Java Advance
     java-api
     ```
 
-11. **Acessar o Projeto:**
+11. **Acessando documentação da API:**
 
     ```bash
-    http://<ip-publico>:8080
+    http://<ip-pubico>:8080/swagger-ui/index.html
     ```
+
+12. **Exemplos de endpoints da API para testes:**
+
+    ```bash
+    curl -X GET http://localhost:8080/championships
+    ```
+
+    ```bash
+    curl -X POST http://localhost:8080/teams
+    ```
+
+   ```bash
+   curl -X PUT http://localhost:8080/teams/1
+   ```
+
+   ```bash
+   curl -X DELETE http://localhost:8080/teams/1
+   ```
 
 ---
 
